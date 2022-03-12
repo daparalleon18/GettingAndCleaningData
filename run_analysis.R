@@ -89,5 +89,5 @@ str(dataset4)
 dataset5 <- aggregate(.~ SubjectID + Activity + Label, 
                       dataset4,
                       mean)
-write.table(dataset5, file = "tidydataset.txt")
+write.table(dataset5, file = "tidydataset.txt", row.name = FALSE)
 
